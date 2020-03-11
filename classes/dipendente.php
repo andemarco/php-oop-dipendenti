@@ -6,7 +6,6 @@
     public $nome;
     public $cognome;
     public $cf;
-    public $ruoloId;
     public $turno;
     public $residenza;
     public $pagaOraria;
@@ -28,7 +27,6 @@
           $this->nome = $_nome;
           $this->cognome = $_cognome;
           $this->cf = $_cf;
-          $this->ruoloId = $_ruoloId;
       }
     }
     public function stipendioMensile ($_oreMensili)
