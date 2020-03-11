@@ -13,7 +13,7 @@
 
     use Ferie;
 
-    public function __construct($_dipendenteId, $_nome, $_cognome, $_cf, $_ruoloId)
+    public function __construct($_dipendenteId, $_nome, $_cognome, $_cf)
     {
       if (empty($_dipendenteId)){
         throw new Exception ('Non hai inserito ID del dipendente');
@@ -23,8 +23,6 @@
         throw new Exception ('Non hai inserito il cognome del dipendente');
       } elseif (empty($_cf)) {
         throw new Exception ('Non hai inserito il CF del dipendente');
-      } elseif (empty($_ruoloId)) {
-        throw new Exception ('Non hai inserito il ruolo del dipendente');
       } else {
           $this->dipendenteId = $_dipendenteId;
           $this->nome = $_nome;
