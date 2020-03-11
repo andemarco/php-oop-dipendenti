@@ -1,0 +1,30 @@
+DIPENDENTE
+  dipendenteID
+  nome
+  cognome
+  cf
+  (trait ferie)
+  ferie accumulate
+  ferie dogute
+  ferie
+  ruolo
+  turno
+  public_construct (id, nome, cognome,turno)
+RUOLO
+  ruoloID
+  nomeRuolo
+  settore
+  livelloPrivilegi
+PRIVILEGIO (extends ruolo)
+  privilegioID
+  livelloPrivilegio
+  benefit
+  autorizzazioniAccessi
+TURNO
+  turnoID
+  InizioTurno
+  FineTurno
+  InizioPausa
+  FinePausa
+  (trait)
+  DurataTurno
