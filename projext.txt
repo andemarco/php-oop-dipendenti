@@ -6,9 +6,11 @@ DIPENDENTE
   (trait ferie)
   ferie accumulate
   ferie dogute
-  ferie
-  ruolo
+  ferie residue
+  ruoloID
   turno
+  residenza
+  paga oraria
   public_construct (id, nome, cognome,turno)
 RUOLO
   ruoloID
